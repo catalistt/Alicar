@@ -1,0 +1,254 @@
+/**************************************************************/
+/*                 Configuración general body                 */
+/**************************************************************/
+
+body{
+    font-family: 'Cabin', sans-serif;
+    padding-top: 80px;
+    color: #082E71;
+}
+
+/**************************************************************/
+/*                 Configuración navbar                       */
+/**************************************************************/
+
+.navbar-brand{
+    font-weight: 400;
+    font-size: 27pt;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+}
+
+/*Agregar color de fondo y letra al título del navbar*/
+.colornav{
+    background-color: #CED8EA;
+    color: #082E71;
+}
+
+/*Para que quede el logo más hacia el centro*/
+#logonav{
+    margin-left:15%;
+}
+
+/*Para configurar posición del boton resposive*/
+#navbarNav{
+    margin-right: 15%;
+}
+
+/**************************************************************/
+/*            Configuración sección 'presentación'            */
+/**************************************************************/
+header{
+    margin: 2% 15% 2% 15%;
+}
+
+/*Imagen del hombre overol*/
+#img_principal{
+    width: 100%;
+}
+
+/*Boton del formulario*/
+.principal_button{
+    border-color: #082E71;
+}
+
+/*linea entre título y subtítulo*/
+hr{
+    border-style: solid;
+    border-color: #082E71;
+}
+
+/*Título, configuración*/
+#h2-titulo{
+    font-weight: 700;
+    font-family: 'PT Serif', serif;
+}
+
+/**************************************************************/
+/*          Configuración sección carrusel productos          */
+/**************************************************************/
+
+/*Configuración general del carrusel*/
+#carousel-productos{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+/*indicadores bajo el carrusel*/
+.carousel-indicators li{
+    background-color: grey;
+    width: 13pt;
+    height: 13pt;
+    border-radius: 100%;
+}
+
+/*Posición de los indicadores*/
+.carousel-indicators{
+    bottom: -20%;
+}
+
+/*línea bajo de "productos"*/
+#linea_productos{
+    width: 150pt;
+    border-style: solid;
+}
+
+/*Color subtítulo de imágenes*/
+h4{
+    color: #082E71;
+}
+
+/*Configuración de letra subtítulo de imágenes*/
+#titulo_productos{
+    font-weight: 400;
+    font-size: 27pt;
+    
+}
+
+/**************************************************************/
+/*        Configuración sección 'quienes somos'               */
+/**************************************************************/
+
+/*Configuración general*/
+
+#linea2{
+    width: 200pt;
+    border-style: solid;
+    border-color: #082E71;
+}
+
+#somos{
+    color: #082E71;
+    font-weight: 400;
+    font-size: 27pt;
+    margin-top: 4%;
+}
+
+.textosomos{
+    font-size: 17pt;
+    text-align: justify;
+}
+
+.valores{
+    font-size: 20pt;
+}
+
+
+/**************************************************************/
+/*            Configuración sección ofertas                   */
+/**************************************************************/
+
+/*título de la sección*/
+h2{
+    text-align: center;
+    font-weight: 700;
+    color: #082E71;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+/*Configuración gral de la sección*/
+#ofertas{
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #082E71;
+}
+
+/*Configuración interna card*/
+.card{
+    color: #373A3C;
+    margin-bottom: 5%;
+}
+
+/*Título de la card*/
+.card-title{
+    font-weight: 700;
+    color: #082E71;
+}
+
+/*Separación con sección anterior*/
+.linea1{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 6%;
+}
+
+/**************************************************************/
+/*           Configuración sección formulario                 */
+/**************************************************************/
+
+/*Congifuracion del primer título*/
+#formulario{
+    font-weight: 700;
+    font-size: 30pt;
+}
+
+/*Configuración del fondo*/
+.bgoscuro{
+    padding: 8% 15% 12% 15%;
+    background-color: #082E71;
+
+}
+
+/*Configuracion párrafo 2*/
+#formulario_second{
+    font-size: 20pt;
+}
+
+/*Para hacer un texto diferente dentro del párrafo*/
+#texto_alicar{
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+
+
+/**************************************************************/
+/*               Configuración footer/contacto                */
+/**************************************************************/
+
+footer{
+    color:  #1A4086;
+    background-color:#CED8EA;
+}
+
+#final{
+    font-size: smaller;
+}
+
+/**************************************************************/
+/*                  Configuración responsive                  */
+/**************************************************************/
+@media screen and (min-width:320px) and (max-width:768px){
+    header{
+        text-align: center;
+        margin: 2% 7% 2% 7%;
+    }
+    #header_title{
+        font-size: 20pt;
+    }
+    .principal_button{
+        font-size: 8pt;
+    }
+    #formulario{
+        font-size: 20pt;
+    }
+    #formulario_second{
+        font-size: 15pt;
+    }
+    .textosomos{
+        font-size: 13pt;
+        margin: 2% 10% 2% 10%;
+    }
+    .valores{
+        font-size: 13pt;
+    }
+
+    #somos{
+        font-size: 20pt;
+    }
+
+    .carousel-indicators{
+        bottom: -5%;
+    }
+}

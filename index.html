@@ -9,17 +9,203 @@
         <!--Vínculo con css-->
         <link rel="stylesheet" href="assets/css/style.css">    
         <!--Tipografía-->
-        
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
         <!--FontAwesome-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <!--Título en la pestaña-->
-        <title>Catalina Aliste | Portafolio</title>
+        <title>ALICAR | VESTIMENTA CORPORATIVA </title>
     </head>
     <body>
-        <!--Se agregan las animaciones después de que todo el contenido de la página funciona-->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+        <!--Agregando el navbar de bootstrap-->
+        <nav class="navbar navbar-expand-lg colornav fixed-top py-0">
+            <img id="logonav" src="assets/img/logo5.png" width="80" height="80" alt="" loading="lazy">
+            <a class="navbar-brand colornav ml-0" href="#">ALICAR</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-secondary" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-secondary" href="#quienes_somos">Quiénes somos</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle text-secondary" href="#productos" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <a class="dropdown-item text-secondary" href="#">Poleras y polerones</a>
+                       <a class="dropdown-item text-secondary" href="#">Parkas y chaquetas</a>
+                       <a class="dropdown-item text-secondary" href="#">Pantalones y jeans</a>
+                       <a class="dropdown-item text-secondary" href="#">Camisas y blusas</a>
+                       <a class="dropdown-item text-secondary" href="#">Ropa de trabajo</a>
+                       <a class="dropdown-item text-secondary" href="#">Ropa técnica</a>
+                       <a class="dropdown-item text-secondary" href="#">Accesorios</a>
+                   </div>
+                   </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-secondary otro" href="#contacto">Contacto</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Seccion inicial - Presentación -->
+        <header id="inicio">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <hr class="d-sm-none d-md-none">
+                    <img src="assets/img/hombreoverol.png" alt="Hombre" id="img_principal">
+                  </div>
+                  <div class="col-sm">
+                    <h1 id="h2-titulo" class="my-4">ALICAR</h1>
+                    <hr>
+                    VESTIMENTA CORPORATIVA PARA TU NEGOCIO<br><br>
+                   <a href="#formulario"><button type="button" class='principal_button btn text-secondary' data-toggle="tooltip" data-placement="bottom" title="Ir a formulario">¿Necesitas que te contactemos?</button></a> 
+                  </div>
+                </div>
+            </div>
+        </header>
+
+        <!--Agregar el carousel de productos-->
+        <section class="mb-3 pb-4" id="carousel-productos">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <p class="text-center mb-1 pb-0 " id="titulo_productos">Productos</p>
+                <hr class="mt-0 pt-0 pb-4" id="linea_productos">
+                <div class="carousel-inner">
+                    <!--El carousel item es para dividir por seccion el carousel. El active para el que aparece primero-->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-sm">
+                                <img src="assets/img/Pantalones y jeans/jeans-denim-trabajo-hombre-60-algodin-40-polister-azul-t-42.jpg" class="d-block w-100" alt="...">
+                                <a href=""><h4 class="titulo_carrusel text-center">Pantalones y jeans </h4></a>
+                            </div>
+                            <div class="col-sm">
+                                <img src="assets/img/Accesorios/balaclava-wind-jammer-unisex.jpg" class="d-block w-100" alt="...">
+                                <a href=""><h4 class="titulo_carrusel text-center">Accesorios </h4></a>
+                            </div>
+                            <div class="col-sm">
+                                <img src="assets/img/Camisas y blusas/blusa-jubae-ristop-outwork-mujer.jpg" class="d-block w-100" alt="...">
+                                <a href=""><h4 class="titulo_carrusel text-center">Camisas y blusas</h4></a>
+                            </div>
+                            <div class="col-sm">
+                                <img src="assets/img/Parkas y chaquetas/casaca-hombre-basic-forro-polar-m-l-100-poly-gris-t-xs.jpg" class="d-block w-100" alt="...">
+                                <a href=""><h4 class="titulo_carrusel text-center">Parkas y chaquetas</h4></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm">
+                                <img src="assets/img/Ropa de trabajo/chaleco-geologo-silversafe-poplin-cinta-reflectiva-130g-gris-t-s.jpg" alt="..." class="d-block w-100">
+                                <a href=""><h4 class="titulo_carrusel text-center">Ropa de trabajo</h4></a>
+                            </div>
+                            <div class="col-sm">
+                                <img src="assets/img/Polerones y poleras/polera-dry-fit-c-camisero-hombre-m-c-100-poly-175g-certificada-azul-t-s.jpg" class="d-block w-100" alt="...">
+                                <a href=""><h4 class="titulo_carrusel text-center">Polerones y poleras</h4></a>
+                            </div>
+                            <div class="col-sm">
+                                <img src="assets/img/Ropa tecnica/capa-antilluvia-con-gorro-y-broche-de-ajuste-azul-u.jpg" alt="..." class="d-block w-100">
+                                <a href=""><h4 class="titulo_carrusel text-center">Ropa técnica</h4></a>
+                            </div>                            <div class="col-sm">
+                                <img src="assets/img/Ropa tecnica/traje-antilluvia-2-pizas-c-sellada-hombre-tela-pvc-poly-035mm-amarillo-t-s.jpg" alt="..." class="d-block w-100">
+                                <a href=""><h4 class="titulo_carrusel text-center">Y más...</h4></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Seccion quiénes somos-->
+        <section class="pt-5 pb-1 mx-auto" id="quienes_somos">
+            <div class="container">
+                <p class="text-center" id="somos"><i class="fas fa-angle-double-right"></i>  ¿Quiénes somos?  <i class="fas fa-angle-double-left"></i></p>
+                <hr class="my-0 py-0" id="linea2"> 
+                <div class="row pt-3">
+                    <div class="col-sm">
+                        <p class="font-weight-light textosomos px-3"> Somos una empresa compuesta por profesionales con más de 30 años de experiencia en el rubro de vestimenta corporativa. Sabemos cómo trabajar para obtener la mejor calidad en productos pero a precios accesibles y convenientes. </p>
+                    </div>
+                    <div class="col-sm">
+                        <p class="font-weight-light textosomos px-3"> Nuestros profesionales han sido responsables de concretar poyectos de empresas muy grandes e importantes, atendiendo a más de 10.000 trabajadores y trabajadoras en semanas, propor- cionandoles lo necesario para operar de manera más adecuada.</p>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col text-center">
+                        <p class="font-weight-light valores"> Nuestro compromiso es:</p>
+                        <p class="valores text-info mb-1"><i class="far fa-handshake text-info"></i> Atención rápida y personalizada</p>
+                        <p class="valores text-info mb-1"><i class="fas fa-shipping-fast text-info"></i> Despacho de productos de calidad</p>
+                        <p class="valores text-info"><i class="far fa-smile-beam"></i> Satisfacción 100% garantizada</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion de ofertas-->
+        <hr class="linea1">
+        <section class="pb-3" id="ofertas">
+            <h2>OFERTAS IMPERDIBLES</h2>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card">
+                        <img src="assets/img/Camisas y blusas/camisa-jubae-ristop-outwork-hombre.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">PRODUCTO 1</h5>
+                          <p class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <img src="assets/img/Pantalones y jeans/pantalon-boldo-mujer.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">PRODUCTO 2</h5>
+                          <p class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <img src="assets/img/Ropa de trabajo/primera-capa-hombre-100-poliester-negro-t-s.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">PRODUCTO 3</h5>
+                          <p class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion de formulario-->
+        <section class="text-white text-center bgoscuro pb-3 mb-0" id="formulario">
+            <p id="formulario">RELLENA EL FORMULARIO</p> 
+            <p id="formulario_second">y nuestro equipo de <span id="texto_alicar">Alicar</span> se contactará contigo </p> 
+            <div class="typeform-widget" data-url="https://caliste.typeform.com/to/DCwwvE" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=DCwwvE&utm_source=typeform.com-01E7H4W3KVVSGGKNWTZP3T38M7-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
+        </section>
+
+        <!--Seccion final - footer -->
+        <footer id="contacto">
+            <div class="container-fluid">
+                <p class="text-center mb-1 pt-3"><i class="fas fa-phone mr-2"></i>+56992377656 </p>
+                <p class="text-center mb-0 pb-2"><i class="far fa-envelope mr-2"></i>Malistecarranza@gmail.com</p>
+                <p class="text-center mb-0 pb-3" id="final">Maipú, Santiago de Chile</p>
+            </div>
+        </footer>    
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        </body>
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
         
